@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -71,7 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\Projects\Applications\Slyvina\Libs\Units\Headers;$(IncludePath)</IncludePath>
+    <IncludePath>E:\Projects\Applications\Slyvina\Libs\Kitty\Headers;E:\Projects\Applications\Slyvina\Libs\Units\Headers;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Exe.$(Platform).$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\Projects\Applications\Slyvina\Libs\Kitty\Headers;E:\Projects\Applications\Slyvina\Libs\Units\Headers;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Exe.$(Platform).$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -130,10 +135,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Libs\Kitty\Headers\High_Headers.hpp" />
+    <ClInclude Include="..\..\..\Libs\Kitty\Headers\Kitty_High.hpp" />
     <ClInclude Include="..\..\..\Libs\Units\Headers\SlyvSilly.hpp" />
     <ClInclude Include="..\..\..\Libs\Units\Headers\SlyvString.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighBASIC.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighBlitzBasic.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighBlitzMax.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighBrainfuck.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighC.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighCobra.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighCS.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighGo.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighHTML.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighINI.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighJava.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighJavaScript.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighNeil.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighNIL.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighPascal.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighPython.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighSASKIA.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighScyndi.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighVisualBasic.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighWhiteSpace.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\KittyHighXML.cpp" />
+    <ClCompile Include="..\..\..\Libs\Kitty\Source\Kitty_High.cpp" />
     <ClCompile Include="..\..\..\Libs\Units\Source\SlyvAsk.cpp" />
     <ClCompile Include="..\..\..\Libs\Units\Source\SlyvDir.cpp" />
     <ClCompile Include="..\..\..\Libs\Units\Source\SlyvDirry.cpp" />
