@@ -10,3 +10,4 @@ DLL.x64.Release/Kitty_DLL.pdb
 *.ilk
 *.log
 *.tlog
+*.enc
