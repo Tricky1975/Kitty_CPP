@@ -7,3 +7,4 @@ DLL.x64.Release/Kitty_DLL.pdb
 *.pdb
 *.obj
 *.recipe
+*.ilk
