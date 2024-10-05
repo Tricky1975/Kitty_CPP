@@ -5,3 +5,4 @@ DLL.x64.Release/Kitty_DLL.dll
 DLL.x64.Release/Kitty_DLL.pdb
 *.exe
 *.pdb
+*.obj
