@@ -11,3 +11,6 @@ DLL.x64.Release/Kitty_DLL.pdb
 *.log
 *.tlog
 *.enc
+*.idb
+*.iobj
+*.ipdb
