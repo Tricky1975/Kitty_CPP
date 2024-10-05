@@ -9,3 +9,4 @@ DLL.x64.Release/Kitty_DLL.pdb
 *.recipe
 *.ilk
 *.log
+*.tlog
