@@ -4,6 +4,8 @@ This is a work in progress, don't expect it to work properly (if it works at all
 When ready this will replace the C# version of Kitty (I want Kitty out of the .NET framework, and to port it more easily to other platforms).
 This is only the main app, the libraries will have their own repository, although an extra project file may appear here to build own .dll files (for an experiment but if you like it, hey why not, eh?)
 
+Also note that portions of this ReadMe file may be outdated. I will fix that up later!
+
 # Kitty
 
 Kitty is just a quick console syntax highlighting tool.
