@@ -1,6 +1,9 @@
-.vs
+# General
 MKL_*
 *.MKL.gini
+
+# Windows
+.vs
 DLL.x64.Release/Kitty_DLL.dll
 DLL.x64.Release/Kitty_DLL.pdb
 *.exe
@@ -15,3 +18,6 @@ DLL.x64.Release/Kitty_DLL.pdb
 *.iobj
 *.ipdb
 *.lib
+
+# Linux
+Linux/*

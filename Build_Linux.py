@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from glob import glob
 from os import system
 from os import remove
 import platform
+import os
 
 global incdir
 incdir = ("../../../Libs/Units/Headers")
@@ -55,9 +56,17 @@ def glijst(dir,lst):
     ret = []
     for l in lst: ret.append("%s/%s.cpp"%(dir,l))
     return ret
+    
+def newdir(d):
+    if not os.path.exists(d):
+        print("Creating directory: ",d)
+        os.makedirs(d)
           
 print("Building Kitty for Linux")
 print("OS: ",platform.system(),"; release: ",platform.release())
 if platform.system()!="Linux":
     print("I'm sorry, but this script has been designed for Linux Only!")
     quit()
+newdir("Linux")
+newdir("Linux/Objects")
+newdir("Linux/Exe")
