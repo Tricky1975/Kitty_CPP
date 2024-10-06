@@ -71,4 +71,4 @@ if platform.system()!="Linux":
 newdir("Linux")
 newdir("Linux/Objects")
 newdir("Linux/Exe")
-gpp("Slyvina Units",glijst("../../Libs/Units/Source",Units),true,true)
+gpp("Slyvina Units",glijst("../../Libs/Units/Source",Units),True,True)
