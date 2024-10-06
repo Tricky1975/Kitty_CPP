@@ -31,11 +31,12 @@ def delf(file):
 def gpp(name,dir,full=True,dirislist=False):
     global incdir
     print("Building: ",name)
-    print("Dir: ",dir)
     if full: print("Include dirs:",incdir)
     if dirislist: 
+        print("%d specific files requested"%len(dir))
         d=dir
     else:
+        print("Dir: ",dir)
         d=glob(dir+"/*.cpp")
     for fp in d:
         print("Compiling: ",fp)
@@ -72,3 +73,4 @@ newdir("Linux")
 newdir("Linux/Objects")
 newdir("Linux/Exe")
 gpp("Slyvina Units",glijst("../../Libs/Units/Source",Units),True,True)
+gpp("Kitty Library","../../Libs/Source/Kitty")
