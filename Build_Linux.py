@@ -6,7 +6,8 @@ import platform
 import os
 
 global incdir
-incdir = ("../../../Libs/Units/Headers")
+incdir = ("../../Libs/Units/Headers","../../Libs/Kitty/Headers")
+Units = ("SlyvAsk","SlyvDir","SlyvDirry","SlyQCol","SlyvStream","SlyvString","SlyvTime","SlyvVolumes")
 
 def gcc(name,dir):
     print("Building: ",name)
@@ -70,3 +71,4 @@ if platform.system()!="Linux":
 newdir("Linux")
 newdir("Linux/Objects")
 newdir("Linux/Exe")
+gpp("Slyvina Units",glijst("../../Libs/Units/Source",Units)
