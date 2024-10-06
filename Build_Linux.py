@@ -7,7 +7,7 @@ import os
 
 global incdir
 incdir = ("../../Libs/Units/Headers","../../Libs/Kitty/Headers")
-Units = ("SlyvAsk","SlyvDir","SlyvDirry","SlyQCol","SlyvStream","SlyvString","SlyvTime","SlyvVolumes")
+Units = ("SlyvAsk","SlyvDir","SlyvDirry","SlyvQCol","SlyvStream","SlyvString","SlyvTime","SlyvVolumes")
 
 def gcc(name,dir):
     print("Building: ",name)
