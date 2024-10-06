@@ -37,6 +37,7 @@ def gpp(name,dir,full=True,dirislist=False):
         d=dir
     else:
         print("Dir: ",dir)
+        print("%d files found"%len(dir))
         d=glob(dir+"/*.cpp")
     for fp in d:
         print("Compiling: ",fp)
@@ -73,4 +74,4 @@ newdir("Linux")
 newdir("Linux/Objects")
 newdir("Linux/Exe")
 gpp("Slyvina Units",glijst("../../Libs/Units/Source",Units),True,True)
-gpp("Kitty Library","../../Libs/Source/Kitty")
+gpp("Kitty Library","../../Libs/Kitty/Source")
