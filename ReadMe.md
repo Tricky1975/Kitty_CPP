@@ -1,15 +1,7 @@
-# WIP
-
-This is a work in progress, don't expect it to work properly (if it works at all).
-When ready this will replace the C# version of Kitty (I want Kitty out of the .NET framework, and to port it more easily to other platforms).
-This is only the main app, the libraries will have their own repository, although an extra project file may appear here to build own .dll files (for an experiment but if you like it, hey why not, eh?)
-
-Also note that portions of this ReadMe file may be outdated. I will fix that up later!
-
-# Kitty
+![Kitty](https://i.imgur.com/lH6boVB.png)
 
 Kitty is just a quick console syntax highlighting tool.
-It was written for the .NET framework and it shows and syntax highlights source files (when it can). The approach is very simplistic (intentionally) so one shouldn't expect too great things from it, but it can at least help as a quick solution. It's set up in a modular way to support for more languages should not be that hard.
+It was written in C++ and it shows and syntax highlights source files (when it can). The approach is very simplistic (intentionally) so one shouldn't expect too great things from it, but it can at least help as a quick solution. It's set up in a modular way to support for more languages should not be that hard.
 
 # Name
 
@@ -32,10 +24,11 @@ Now Kitty has NO built-in support for wild cards, which can be a bit of a bummer
 
 # MacOS X and Linux
 
-Kitty has been coded in C#, and therefore uses the .NET Framework. When you use programs like Mono, Kitty should work
+A Linux version is being planned. Since I don't pay loads of money to Apple in order to gain their trust, I doubt Kitty will work on any Apple device for the time being, unless you wish to compile everything yourself, but I never tested if that would work.
+Although not tested, Kitty should work with tools such as Wine.
 ~~~shell
-mono Kitty.exe "SourceFile.c"
-# Of course that is if Kitty.exe is in a directory Mono can find XD
+Wine Kitty.exe "SourceFile.c"
+# Of course that is if Kitty.exe is in a directory Wine can find XD
 ~~~
 
 # Supported Languages
@@ -49,10 +42,9 @@ bmx | BlitzMax | Jeroen P. Broks
 bf | Brainfuck | Jeroen P.Broks | Esolang
 c/cpp/h/hpp | C/C++ | Jeroen P. Broks
 cs | C# | Jeroen P. Broks
-gini | GINI | Jeroen P. Broks
 go | [Go](https://golang.org/) | Jeroen P. Broks
 html/htm | HTML | Freezernick
-ini | ini/config | Jeroen P. Broks
+ini | ini/config/GINIE | Jeroen P. Broks
 java | Java | Jeroen P. Broks
 js | JavaScript | Jeroen P. Broks
 json | JSON | Jeroen P. Broks
@@ -62,7 +54,7 @@ neil | Neil | Jeroen P. Broks
 pas | Pascal | Jeroen P. Broks
 py | Python | Jeroen P. Broks
 saskia | SAKSIA | Jeroen P. Broks
-scf/ssf | [Scyndi prototype](https://github.com/Wendicka/Scyndi) | Jeroen P. Broks | This language will be entirely revised and then this format may get deprecated!
+scyndi | Scyndi | Jeroen P. Broks | 
 vb | VisualBasic | Freezernick
 ws | Whitespace | Jeroen P. Broks | Depending on the used console software, this may not work on your system or not well. 
 xml | XML | Freezernick | This also triggers C# and Visual C++ projects and XAML files
