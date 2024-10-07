@@ -78,3 +78,5 @@ gpp("Kitty Library","../../Libs/Kitty/Source")
 gpp("Kitty Application","Kitty/src")
 print("Linking: Linux/Exe/Kitty")
 rc = system("g++ -o Linux/Exe/Kitty Linux/Objects/*.o")
+if rc!=0:
+    print("Error in linking (%d): "%rc)
