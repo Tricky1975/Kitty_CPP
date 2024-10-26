@@ -46,8 +46,11 @@ static void ViewFile(String a) {
 		// QCol->Doing("EOLN", eoln); // didn't work anyway
 		//QCol->OriCol();
 		auto ext = Lower(ExtractExt(arg));
+		auto wf{ "WF:" + StripDir(arg) };
 		KittyHigh Viewer = _KittyHigh::Langs["OTHER"];
-		if (_KittyHigh::Langs.count(ext)) Viewer = _KittyHigh::Langs[ext];
+		if (_KittyHigh::Langs.count(wf)) Viewer = _KittyHigh::Langs[wf];
+		else if (_KittyHigh::Langs.count(ext)) Viewer = _KittyHigh::Langs[ext];
+		if (!Viewer) { QCol->Error("Initiating Viewer failed"); return; }
 		QCol->Doing("Type", Viewer->Language); _KittyHigh::PageBreak();
 		_KittyHigh::WriteLine();
 		Viewer->Show(src, slin);

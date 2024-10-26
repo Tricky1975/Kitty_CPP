@@ -4,4 +4,8 @@
     <LocalDebuggerCommandArguments>"E:\Projects\Maps\Kthura\Luna's Father\Texures_Settings\CH1_Dungeon_KokonoraForest_2.ini"</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>E:\Projects\Applications\Test\C++\Scons\Multi\SConstruct</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>
